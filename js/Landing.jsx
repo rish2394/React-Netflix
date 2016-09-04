@@ -1,13 +1,14 @@
 const React = require('react')
-
+const {Link} = require('react-router')
+console.log('In Landing Route')
 const Landing = () => (
-  <div className='app-container'>
+
     <div className='home-info'>
-      <h1 className='title'>svideos</h1>
+      <h1 className='title'>search videos</h1>
       <input className='search' type='text' placeholder='Search' />
-      <button className='browse-all'>or Browse-all</button>
+      <Link to='search' className='browse-all'>or Browse-all</Link>
     </div>
-  </div>
+  
 )
 
 module.exports = Landing
